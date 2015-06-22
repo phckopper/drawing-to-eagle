@@ -1,3 +1,7 @@
+#Script generated files and test images
+*.PNG
+*.JPG
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
