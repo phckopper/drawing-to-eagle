@@ -26,7 +26,7 @@ def angle_cos(p0, p1, p2):
     return abs( np.dot(d1, d2) / np.sqrt( np.dot(d1, d1)*np.dot(d2, d2) ) )
 
 def find_squares(img):
-    img = cv2.GaussianBlur(img, (5, 5), 0)
+    img = cv2.GaussianBlur(img, (9, 9), 0)
     squares = []
     for gray in cv2.split(img):
         for thrs in xrange(20, 200, 2):
